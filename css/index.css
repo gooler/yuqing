@@ -130,8 +130,6 @@ a:hover {
   position: absolute;
   top: 350px;
   left: 50px;
-  animation: move3 3s;
-  animation-fill-mode: forwards;
 }
 @keyframes move3 {
   0% {
@@ -276,40 +274,43 @@ a:hover {
 .floor2 {
   background: url(../images/floor1/3.jpg) no-repeat;
 }
-.floor2 .floor2-1 {
+.floor2-1 {
   position: absolute;
   top: 120px;
-  right: 0px;
+  right: -150px;
   width: 444px;
   height: 427px;
-  background: url(../images/f2-1f.png);
+  background: url(../images/f2-1f.png) no-repeat;
+  background-size: contain;
 }
-.floor2 .floor2-2 {
+.floor2-2 {
   width: 414px;
   height: 118px;
   position: absolute;
   top: 200px;
-  left: 100px;
+  left: -100px;
 }
-.floor2 .floor2-2 h1 {
+.floor2-2 h1 {
   font-family: '微软雅黑';
   color: #fff;
   font-size: 40px;
 }
-.floor2 .floor2-2 p {
+.floor2-2 p {
   font-family: '微软雅黑';
   color: #fff;
   font-size: 24px;
 }
-.floor2 .floor2-3 {
+.floor2-3 {
   perspective: 1200px;
+  transform-style: preserve-3d;
   -webkit-transform-origin: center center;
   position: absolute;
   left: 0px;
   top: 205px;
-  width: 126px;
+  width: 66px;
   height: 120px;
   background: url(../images/lingxian.png) no-repeat;
+  background-size: contain;
   animation: mov2-3 3s linear infinite;
 }
 @keyframes mov2-3 {
@@ -320,32 +321,140 @@ a:hover {
     transform: rotateY(720deg);
   }
 }
-.floor2 .juxingB {
+.juxingB {
   width: 100%;
   height: 88px;
   position: absolute;
   left: 60px;
   bottom: 0px;
 }
-.floor2 .juxingB .floor2-8 {
+.juxingB .floor2-8 {
   position: absolute;
   left: 0px;
 }
-.floor2 .juxingB .floor2-4 {
+.juxingB .floor2-4 {
   position: absolute;
   left: 80px;
 }
-.floor2 .juxingB .floor2-5 {
+.juxingB .floor2-5 {
   position: absolute;
   left: 168px;
 }
-.floor2 .juxingB .floor2-6 {
+.juxingB .floor2-6 {
   position: absolute;
   left: 530px;
 }
-.floor2 .juxingB .floor2-7 {
+.juxingB .floor2-7 {
   position: absolute;
   left: 620px;
+}
+.floor3 {
+  background: url(../images/bg3.jpg) no-repeat;
+}
+.floor3-1 {
+  position: absolute;
+  top: 120px;
+  right: -150px;
+  width: 480px;
+  height: 427px;
+  background: url(../images/f3-1.png) no-repeat;
+  background-size: contain;
+}
+.floor2-1 {
+  position: absolute;
+  top: 120px;
+  right: -150px;
+  width: 444px;
+  height: 427px;
+  background: url(../images/f2-1f.png) no-repeat;
+  background-size: contain;
+}
+.floor3-2 {
+  width: 414px;
+  height: 118px;
+  position: absolute;
+  top: 200px;
+  left: -100px;
+}
+.floor3-2 h1 {
+  font-family: '微软雅黑';
+  color: #fff;
+  font-size: 40px;
+}
+.floor3-2 p {
+  font-family: '微软雅黑';
+  color: #fff;
+  font-size: 24px;
+}
+.floor3-3 {
+  perspective: 1200px;
+  -webkit-transform-origin: center center;
+  position: absolute;
+  left: -100px;
+  top: 205px;
+  width: 60px;
+  height: 120px;
+  background: url(../images/quanmian.png) no-repeat;
+  background-size: contain;
+  animation: mov2-3 3s linear infinite;
+}
+.floor3-4 {
+  position: absolute;
+  bottom: 0px;
+  left: -200px;
+  width: 1920px;
+  height: 138px;
+  background: url(../images/f3-bf.png) no-repeat;
+}
+.floor4 {
+  background: url(../images/f4-1.jpg) no-repeat;
+}
+.floor4 .floor4-1 {
+  position: absolute;
+  top: 120px;
+  right: -150px;
+  width: 480px;
+  height: 427px;
+  background: url(../images/f4-2.png) no-repeat;
+  background-size: contain;
+}
+.floor4 .floor2-1 {
+  position: absolute;
+  top: 120px;
+  right: -150px;
+  width: 444px;
+  height: 427px;
+  background: url(../images/f2-1f.png) no-repeat;
+  background-size: contain;
+}
+.floor4 .floor4-2 {
+  width: 414px;
+  height: 118px;
+  position: absolute;
+  top: 200px;
+  left: -100px;
+}
+.floor4 .floor4-2 h1 {
+  font-family: '微软雅黑';
+  color: #fff;
+  font-size: 40px;
+}
+.floor4 .floor4-2 p {
+  font-family: '微软雅黑';
+  color: #fff;
+  font-size: 24px;
+}
+.floor4 .floor4-3 {
+  perspective: 1200px;
+  -webkit-transform-origin: center center;
+  position: absolute;
+  left: -100px;
+  top: 205px;
+  width: 60px;
+  height: 120px;
+  background: url(../images/zhuanye.png) no-repeat;
+  background-size: contain;
+  animation: mov2-3 3s linear infinite;
 }
 .juxing1 {
   width: 44px;
@@ -422,6 +531,7 @@ a:hover {
     margin: 0px auto;
     width: 170px;
     height: 150px;
+    top: 30%;
   }
   .floor1 .login .login-1 {
     line-height: 20px;
@@ -475,5 +585,123 @@ a:hover {
     color: red;
     font-size: 14px;
     line-height: 10px;
+  }
+  .floor1 .floor2-1 {
+    width: 222px;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+  }
+  .floor1 .floor2-2 {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  .floor1 .floor2-2 h1 {
+    font-family: '微软雅黑';
+    color: #fff;
+    font-size: 26px;
+  }
+  .floor1 .floor2-2 p {
+    font-family: '微软雅黑';
+    color: #fff;
+    font-size: 16px;
+  }
+  .floor1 .floor2-3 {
+    width: 30px;
+    height: 60px;
+    top: 30%;
+    left: 20%;
+  }
+  .floor1 .floor3-1 {
+    width: 222px;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+  }
+  .floor1 .floor3-2 {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  .floor1 .floor3-2 h1 {
+    font-family: '微软雅黑';
+    color: #fff;
+    font-size: 26px;
+  }
+  .floor1 .floor3-2 p {
+    font-family: '微软雅黑';
+    color: #fff;
+    font-size: 16px;
+  }
+  .floor1 .floor3-3 {
+    width: 30px;
+    height: 60px;
+    top: 30%;
+    left: 20%;
+  }
+  .floor1 .floor4-1 {
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+  }
+  .floor1 .floor4-2 {
+    width: 105px;
+    height: 60px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  .floor1 .floor4-2 h1 {
+    font-family: '微软雅黑';
+    color: #fff;
+    font-size: 26px;
+  }
+  .floor1 .floor4-2 p {
+    font-family: '微软雅黑';
+    color: #fff;
+    font-size: 16px;
+  }
+  .floor1 .floor4-3 {
+    width: 30px;
+    height: 60px;
+    top: 30%;
+    left: 20%;
+  }
+}
+.slide1 {
+  animation: slideLeft 1s ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(150px);
+    opacity: 1;
+  }
+}
+.slide2 {
+  animation: slideRight 1s ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-150px);
+    opacity: 1;
   }
 }
